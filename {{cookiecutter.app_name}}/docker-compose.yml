@@ -1,4 +1,4 @@
-version: '3.6'
+version: "3.6"
 
 x-build-args: &build_args
   INSTALL_PYTHON_VERSION: {{cookiecutter.python_version}}
@@ -20,7 +20,6 @@ services:
     image: "{{cookiecutter.app_name}}-development"
     ports:
       - "5000:5000"
-      - "2992:2992"
     <<: *default_volumes
 
   flask-prod:

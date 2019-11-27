@@ -36,7 +36,6 @@ RUN pipenv install --dev
 {%- else %}
 RUN pip install --user -r requirements/dev.txt
 {%- endif %}
-EXPOSE 2992
 EXPOSE 5000
 CMD [ {% if cookiecutter.use_pipenv == 'yes' %}"pipenv", "run", {% endif %}"npm", "start" ]
 

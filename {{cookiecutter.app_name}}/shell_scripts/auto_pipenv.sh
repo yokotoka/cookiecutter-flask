@@ -1,4 +1,5 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+set -eo pipefail
 
 function auto_pipenv_shell {
     if [ -f "Pipfile" ] ; then

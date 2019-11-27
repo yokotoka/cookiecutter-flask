@@ -3,7 +3,7 @@
   "email": "sloria1@gmail.com",
   "github_username": "sloria",
   "project_name": "My Flask App",
-  "app_name": "{{cookiecutter.project_name.lower().replace('-', '_').replace(' ', '_')}}",
+  "app_name": "{{ cookiecutter.project_name.lower().strip().replace(' ', '_').replace('-', '_').replace('.', '_') }}",
   "project_short_description": "A flasky app.",
   "use_pipenv": ["no", "yes"],
   "python_version": ["3.8", "3.7", "3.6"],
